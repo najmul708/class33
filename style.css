@@ -1,0 +1,106 @@
+body,p,span{
+    font-family:'Roboto',sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6,a{
+        font-family: 'Rubik' sans-serif;
+    }
+    .mbg{
+        background: #e0e0e0;
+    }
+    .i1{
+        height: 50px;
+    }
+    .bt{
+        background: #fff;
+        border-radius: 40px;
+        padding: 10px;
+        color: blue;
+        text-decoration: none;
+
+    }
+    
+    /* start */
+    .main-header .container-fluid,.slider{
+    max-width: 1480px;
+    }
+    .our-menu li{
+        position: relative;
+    }
+    .our-menu li a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #111;
+        font-weight: 500;
+    }
+    .our-menu li a:hover{
+        color: blue;
+        
+    }
+    .our-menu li a::after{
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 80%;
+        height: 3px;
+        background: blue;
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: .4s;
+        transform-origin: left center;
+    }
+    .our-menu li:hover a::after{
+        visibility: visible;
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    /* dropdown */
+    .our-menu li ul {
+        position: absolute;
+        width: 250px;
+        left: 0;
+        padding: 10px;
+        top: 100%;
+        background: #ffffff;
+        list-style: none;
+        padding: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition:all .5s ease-in-out;
+    }
+    .our-menu li:hover ul{
+        opacity: 1;
+	    visibility: visible;
+	    top: 100%;
+    }
+    .our-menu li:hover ul li a::after{
+        visibility: hidden;
+        opacity: 0 ;
+        transform: scaleX(0);
+    }
+    /* slider */
+    .jj{
+        background: #f6f9fc;
+    }
+    .slider-contant-wrap{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .slider-contant h6{
+        color: #e73a3e;
+    }
+    .slider-contant h1{
+        font-size: 65px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-family: 'Rubik'sans-serif;
+    }
+    .slider-contant p{
+        font-weight: 400;
+        color: #606060;
+        font-size: 20px;
+    }
